@@ -1,0 +1,7 @@
+{
+  "title": "应用上线部分",
+  "description": "一个应用上线的基本流程",
+  "icon": "ServerCog",
+  "root": true,
+  "pages": ["---章节介绍---", "index", "---准备工作---", "prepare/create"]
+}

@@ -1,0 +1,7 @@
+{
+  "title": "网络架构部分",
+  "description": "内部网络架构设计",
+  "icon": "Network",
+  "root": true,
+  "pages": ["---章节介绍---", "index"]
+}
