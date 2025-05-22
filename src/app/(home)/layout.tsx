@@ -124,17 +124,20 @@ function Footer() {
     <footer className="mt-auto border-t bg-fd-card py-12 text-fd-secondary-foreground">
       <div className="container flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="mb-1 text-sm font-semibold">Fumadocs</p>
+          <p className="mb-1 text-sm font-semibold">
+            由 Next.JS 引擎和 Fumadocs 框架强力驱动的下一版本知识库.
+          </p>
           <p className="text-xs">
-            Built with ❤️ by{" "}
+            由{" "}
             <a
               href="https://fuma-dev.vercel.app"
               rel="noreferrer noopener"
               target="_blank"
               className="font-medium"
             >
-              Fuma
+              4R3AL 团队
             </a>
+            ❤️ 倾情呈现
           </p>
         </div>
       </div>

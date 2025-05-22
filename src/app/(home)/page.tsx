@@ -300,7 +300,7 @@ function Highlights(): React.ReactElement {
     <div className="grid grid-cols-1 border-r md:grid-cols-2 lg:grid-cols-3">
       <div className="col-span-full flex flex-row items-start justify-center border-l border-t p-8 pb-2 text-center">
         <h2 className="bg-fd-primary text-fd-primary-foreground px-1 text-2xl font-semibold">
-          Highlights
+          新版亮点
         </h2>
         <MousePointer className="-ml-1 mt-8" />
       </div>
@@ -375,7 +375,8 @@ function Hero() {
       />
       <h1 className="mb-8 text-4xl font-medium md:hidden">Build Your Docs</h1>
       <h1 className="mb-8 max-w-[600px] text-4xl font-medium max-md:hidden">
-        Build excellent documentation site with less effort
+        下一版本的知识库，
+        <br />由 Next.JS 引擎强力驱动。
       </h1>
       <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">
         Fumadocs is a beautiful documentation framework for Developers, flexible
