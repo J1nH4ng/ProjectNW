@@ -16,6 +16,9 @@ import {
   SearchIcon,
   Terminal,
   TimerIcon,
+  BadgeCheck,
+  Workflow,
+  GraduationCap,
 } from "lucide-react";
 import { File, Files, Folder } from "fumadocs-ui/components/files";
 import Link from "next/link";
@@ -65,7 +68,7 @@ export default function Page() {
             <Hero />
             <UwuHero />
           </div>
-          <Feedback />
+          {/* <Feedback /> */}
           <Introduction />
           <div
             className="relative overflow-hidden border-x border-t px-8 py-16 sm:py-24"
@@ -84,7 +87,7 @@ export default function Page() {
           <Features />
           <Highlights />
           <Why />
-          <Contributing />
+          {/* <Contributing /> */}
           <End />
         </div>
       </main>
@@ -197,10 +200,14 @@ function End() {
     <div className="flex flex-col border-b border-r md:flex-row *:border-l *:border-t">
       <div className="group flex flex-col min-w-0 flex-1 pt-8 **:transition-colors">
         <h2 className="text-3xl text-center font-extrabold font-mono uppercase text-fd-muted-foreground mb-4 lg:text-4xl group-hover:text-blue-500">
-          Build Your Docs
+          享受你的阅读体验
         </h2>
         <p className="text-center font-mono text-xs text-fd-foreground/60 mb-8 group-hover:text-blue-500/80">
-          light and gorgeous, just like the moon.
+          正如毛姆在《月亮与六便士》中写道：
+          <br />
+          “人生漫长转瞬即逝，有人见尘埃，有人见星辰，也有人转瞬即逝。
+          <br />
+          满地都是六便士，他抬头却看见了月亮。”
         </p>
         <div className="h-[200px] overflow-hidden p-8 bg-gradient-to-b from-fd-primary/10 group-hover:from-blue-500/10">
           <div className="mx-auto bg-radial-[circle_at_0%_100%] from-60% from-transparent to-fd-primary size-[500px] rounded-full group-hover:from-blue-500 group-hover:to-blue-600/10" />
@@ -210,10 +217,10 @@ function End() {
         <li>
           <span className="flex flex-row items-center gap-2 font-medium">
             <BatteryChargingIcon className="size-5" />
-            Battery guaranteed.
+            持续更新
           </span>
           <span className="mt-2 text-sm text-fd-muted-foreground">
-            Actively maintained, open for contributions.
+            保证文档的所有内容是最新与最准确的。
           </span>
         </li>
         <li>
@@ -221,22 +228,42 @@ function End() {
             <svg viewBox="0 0 24 24" className="size-5" fill="currentColor">
               <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
             </svg>
-            Fully open-source.
+            完全开源
           </span>
           <span className="mt-2 text-sm text-fd-muted-foreground">
-            Open source, available on Github.
+            你可以在 Github 上找我我们的所有内容。
           </span>
         </li>
         <li>
           <span className="flex flex-row items-center gap-2 font-medium">
-            <TimerIcon className="size-5" />
-            Within seconds.
+            <Workflow className="size-5" />
+            系统化的
           </span>
           <span className="mt-2 text-sm text-fd-muted-foreground">
-            Initialize a new project instantly with CLI.
+            根据业务上线的基本流程来编写文档，确保整体流程的一致性。
           </span>
         </li>
-        <li className="flex flex-row flex-wrap gap-2 mt-auto">
+        <li>
+          <span className="flex flex-row items-center gap-2 font-medium">
+            <BadgeCheck className="size-5" />
+            生产检验
+          </span>
+          <span className="mt-2 text-sm text-fd-muted-foreground">
+            文档中的所有内容是经过生产环境检验得出的，确保可用性。
+          </span>
+        </li>
+        <li>
+          <span className="flex flex-row items-center gap-2 font-medium">
+            <GraduationCap className="size-5" />
+            终生学习
+          </span>
+          <span className="mt-2 text-sm text-fd-muted-foreground">
+            只有那些经过自己思考得出的结论才是真正意义上的自我的知识。
+            <br />
+            解决焦虑的唯一方法就是不断的学习，行动往往是解决问题的最好办法。
+          </span>
+        </li>
+        {/* <li className="flex flex-row flex-wrap gap-2 mt-auto">
           <Link href="/docs" className={cn(buttonVariants())}>
             Read docs
           </Link>
@@ -251,7 +278,7 @@ function End() {
           >
             Open Demo
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
@@ -379,20 +406,20 @@ function Hero() {
         <br />由 Next.JS 引擎强力驱动。
       </h1>
       <p className="mb-8 text-fd-muted-foreground md:max-w-[80%] md:text-xl">
-        Fumadocs is a beautiful documentation framework for Developers, flexible
-        and performant, with everything from Next.js.
+        借助 Next.JS 引擎和 Fumadocs
+        框架的强大功能，相比于第一版知识库来说，对页面进行了全新的升级，功能也更加丰富，使你的阅读体验变得更好。
       </p>
       <div className="inline-flex items-center gap-3 max-md:mx-auto">
         <Link
-          href="/docs/ui"
+          href="/docs/networks"
           className={cn(
             buttonVariants({ size: "lg", className: "rounded-full" }),
           )}
         >
-          Getting Started
+          查看文档
         </Link>
         <a
-          href="https://stackblitz.com/~/github.com/fuma-nama/fumadocs-ui-template"
+          href="https://github.com/J1nH4ng/ProjectNW"
           target="_blank"
           rel="noreferrer noopener"
           className={cn(
@@ -403,7 +430,7 @@ function Hero() {
             }),
           )}
         >
-          Open Demo
+          在 Github 查看
         </a>
       </div>
       <PreviewImages />
@@ -411,79 +438,79 @@ function Hero() {
   );
 }
 
-const feedback = [
-  {
-    avatar: "https://avatars.githubusercontent.com/u/124599",
-    user: "shadcn",
-    role: "Creator of Shadcn UI",
-    message: `You know how you end up rebuilding a full docs site every time you start a new project?
+// const feedback = [
+//   {
+//     avatar: "https://avatars.githubusercontent.com/u/124599",
+//     user: "shadcn",
+//     role: "Creator of Shadcn UI",
+//     message: `You know how you end up rebuilding a full docs site every time you start a new project?
 
-Fumadocs fixes this by giving you all the right blocks that you compose together.
+// Fumadocs fixes this by giving you all the right blocks that you compose together.
 
-Like headless docs to build exactly what you need.`,
-  },
-  {
-    avatar: "https://avatars.githubusercontent.com/u/35677084",
-    user: "Anthony Shew",
-    role: "Turbo DX at Vercel",
-    message: `Major shoutout to @fuma_nama for making fumadocs, a gorgeous documentation framework that composes beautifully into the App Router.`,
-  },
-  {
-    user: "Aiden Bai",
-    avatar: "https://avatars.githubusercontent.com/u/38025074",
-    role: "Creator of Million.js",
-    message: "fumadocs is the best Next.js docs framework",
-  },
-  {
-    avatar: "https://avatars.githubusercontent.com/u/10645823",
-    user: "David Blass",
-    role: "Creator of Arktype",
-    message: `I'd have no shot building @arktypeio docs that looked half this good without it 😍`,
-  },
-];
+// Like headless docs to build exactly what you need.`,
+//   },
+//   {
+//     avatar: "https://avatars.githubusercontent.com/u/35677084",
+//     user: "Anthony Shew",
+//     role: "Turbo DX at Vercel",
+//     message: `Major shoutout to @fuma_nama for making fumadocs, a gorgeous documentation framework that composes beautifully into the App Router.`,
+//   },
+//   {
+//     user: "Aiden Bai",
+//     avatar: "https://avatars.githubusercontent.com/u/38025074",
+//     role: "Creator of Million.js",
+//     message: "fumadocs is the best Next.js docs framework",
+//   },
+//   {
+//     avatar: "https://avatars.githubusercontent.com/u/10645823",
+//     user: "David Blass",
+//     role: "Creator of Arktype",
+//     message: `I'd have no shot building @arktypeio docs that looked half this good without it 😍`,
+//   },
+// ];
 
-function Feedback() {
-  return (
-    <div className="relative border-x border-t pt-8 bg-fd-background">
-      <div className="flex flex-row gap-6 justify-between px-6 mb-6 items-center">
-        <p className="text-sm font-medium md:text-lg">
-          Trusted by awesome teams and developers
-        </p>
-        <Link
-          href="/showcase"
-          className={cn(buttonVariants({ variant: "outline" }))}
-        >
-          Showcase
-        </Link>
-      </div>
-      <Marquee className="pb-8 [mask-image:linear-gradient(to_right,transparent,white_20px,white_calc(100%-20px),transparent)]">
-        {feedback.map((item) => (
-          <div
-            key={item.user}
-            className="flex flex-col rounded-xl border bg-gradient-to-b from-fd-card p-4 shadow-lg w-[320px]"
-          >
-            <p className="text-sm whitespace-pre-wrap">{item.message}</p>
+// function Feedback() {
+//   return (
+//     <div className="relative border-x border-t pt-8 bg-fd-background">
+//       <div className="flex flex-row gap-6 justify-between px-6 mb-6 items-center">
+//         <p className="text-sm font-medium md:text-lg">
+//           Trusted by awesome teams and developers
+//         </p>
+//         <Link
+//           href="/showcase"
+//           className={cn(buttonVariants({ variant: "outline" }))}
+//         >
+//           Showcase
+//         </Link>
+//       </div>
+//       <Marquee className="pb-8 [mask-image:linear-gradient(to_right,transparent,white_20px,white_calc(100%-20px),transparent)]">
+//         {feedback.map((item) => (
+//           <div
+//             key={item.user}
+//             className="flex flex-col rounded-xl border bg-gradient-to-b from-fd-card p-4 shadow-lg w-[320px]"
+//           >
+//             <p className="text-sm whitespace-pre-wrap">{item.message}</p>
 
-            <div className="mt-auto flex flex-row items-center gap-2 pt-4">
-              <Image
-                src={item.avatar}
-                alt="avatar"
-                width="32"
-                height="32"
-                unoptimized
-                className="size-8 rounded-full"
-              />
-              <div>
-                <p className="text-sm font-medium">{item.user}</p>
-                <p className="text-xs text-fd-muted-foreground">{item.role}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Marquee>
-    </div>
-  );
-}
+//             <div className="mt-auto flex flex-row items-center gap-2 pt-4">
+//               <Image
+//                 src={item.avatar}
+//                 alt="avatar"
+//                 width="32"
+//                 height="32"
+//                 unoptimized
+//                 className="size-8 rounded-full"
+//               />
+//               <div>
+//                 <p className="text-sm font-medium">{item.user}</p>
+//                 <p className="text-xs text-fd-muted-foreground">{item.role}</p>
+//               </div>
+//             </div>
+//           </div>
+//         ))}
+//       </Marquee>
+//     </div>
+//   );
+// }
 
 function Introduction(): React.ReactElement {
   return (
@@ -545,35 +572,35 @@ Hello World
   );
 }
 
-function Contributing() {
-  return (
-    <div className="flex flex-col items-center border-x border-t px-4 py-16 text-center">
-      <Heart fill="currentColor" className="text-pink-500 mb-4" />
-      <h2 className="mb-4 text-xl font-semibold sm:text-2xl">
-        Made Possible by You.
-      </h2>
-      <p className="mb-4 text-fd-muted-foreground">
-        Fumadocs is 100% powered by passion and open source community.
-      </p>
-      <div className="mb-8 flex flex-row items-center gap-2">
-        <Link
-          href="/sponsors"
-          className={cn(buttonVariants({ variant: "outline" }))}
-        >
-          Sponsors
-        </Link>
-        <a
-          href="https://github.com/fuma-nama/fumadocs/graphs/contributors"
-          rel="noreferrer noopener"
-          className={cn(buttonVariants({ variant: "ghost" }))}
-        >
-          Contributors
-        </a>
-      </div>
-      <ContributorCounter repoOwner={owner} repoName={repo} />
-    </div>
-  );
-}
+// function Contributing() {
+//   return (
+//     <div className="flex flex-col items-center border-x border-t px-4 py-16 text-center">
+//       <Heart fill="currentColor" className="text-pink-500 mb-4" />
+//       <h2 className="mb-4 text-xl font-semibold sm:text-2xl">
+//         Made Possible by You.
+//       </h2>
+//       <p className="mb-4 text-fd-muted-foreground">
+//         Fumadocs is 100% powered by passion and open source community.
+//       </p>
+//       <div className="mb-8 flex flex-row items-center gap-2">
+//         <Link
+//           href="/sponsors"
+//           className={cn(buttonVariants({ variant: "outline" }))}
+//         >
+//           Sponsors
+//         </Link>
+//         <a
+//           href="https://github.com/J1nH4ng/ProjectNW/graphs/contributors"
+//           rel="noreferrer noopener"
+//           className={cn(buttonVariants({ variant: "ghost" }))}
+//         >
+//           Contributors
+//         </a>
+//       </div>
+//       <ContributorCounter repoOwner={owner} repoName={repo} />
+//     </div>
+//   );
+// }
 
 function Features() {
   return (

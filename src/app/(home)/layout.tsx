@@ -10,7 +10,14 @@ import {
 import Link from "fumadocs-core/link";
 import Image from "next/image";
 import Preview from "@/public/banner.png";
-import { Book, ComponentIcon, Pencil, PlusIcon, Server } from "lucide-react";
+import {
+  Book,
+  ComponentIcon,
+  Pencil,
+  PlusIcon,
+  Server,
+  ShieldCheck,
+} from "lucide-react";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
@@ -20,16 +27,16 @@ export default function Layout({ children }: { children: ReactNode }) {
         {
           type: "menu",
           on: "menu",
-          text: "Documentation",
+          text: "文档部分",
           items: [
             {
-              text: "Getting Started",
-              url: "/docs/ui",
+              text: "快速开始",
+              url: "/docs/networks",
               icon: <Book />,
             },
             {
-              text: "Components",
-              url: "/docs/ui/components",
+              text: "应用上线",
+              url: "/docs/server",
               icon: <ComponentIcon />,
             },
           ],
@@ -40,10 +47,10 @@ export default function Layout({ children }: { children: ReactNode }) {
           children: (
             <NavbarMenu>
               <NavbarMenuTrigger>
-                <Link href="/docs/ui">Documentation</Link>
+                <Link href="/docs/networks">文档部分</Link>
               </NavbarMenuTrigger>
               <NavbarMenuContent className="text-[15px]">
-                <NavbarMenuLink href="/docs/ui" className="md:row-span-2">
+                <NavbarMenuLink href="/docs/networks" className="md:row-span-2">
                   <div className="-mx-3 -mt-3">
                     <Image
                       src={Preview}
@@ -55,36 +62,32 @@ export default function Layout({ children }: { children: ReactNode }) {
                       }}
                     />
                   </div>
-                  <p className="font-medium">Getting Started</p>
+                  <p className="font-medium">快速开始</p>
                   <p className="text-fd-muted-foreground text-sm">
-                    Learn to use Fumadocs on your docs site.
+                    从头开始阅读文档内容
                   </p>
                 </NavbarMenuLink>
 
                 <NavbarMenuLink
-                  href="/docs/ui/components"
+                  href="/docs/server/cve"
                   className="lg:col-start-2"
                 >
-                  <ComponentIcon className="bg-fd-primary text-fd-primary-foreground p-1 mb-2 rounded-md" />
-                  <p className="font-medium">Components</p>
+                  <ShieldCheck className="bg-fd-primary text-fd-primary-foreground p-1 mb-2 rounded-md" />
+                  <p className="font-medium">漏洞修复</p>
                   <p className="text-fd-muted-foreground text-sm">
-                    Add interactive experience to your docs.
+                    查看服务器漏洞的修复文档
                   </p>
                 </NavbarMenuLink>
 
-                <NavbarMenuLink
-                  href="/docs/ui/openapi"
-                  className="lg:col-start-2"
-                >
+                <NavbarMenuLink href="/docs/openapi" className="lg:col-start-2">
                   <Server className="bg-fd-primary text-fd-primary-foreground p-1 mb-2 rounded-md" />
                   <p className="font-medium">OpenAPI</p>
                   <p className="text-fd-muted-foreground text-sm">
-                    Generate interactive playgrounds and docs for your OpenAPI
-                    schema.
+                    查看本网站提供的 API 接口及其使用方法
                   </p>
                 </NavbarMenuLink>
 
-                <NavbarMenuLink
+                {/* <NavbarMenuLink
                   href="/docs/ui/markdown"
                   className="lg:col-start-3 lg:row-start-1"
                 >
@@ -104,7 +107,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <p className="text-fd-muted-foreground text-sm">
                     Setup Fumadocs for your existing Next.js app.
                   </p>
-                </NavbarMenuLink>
+                </NavbarMenuLink> */}
               </NavbarMenuContent>
             </NavbarMenu>
           ),

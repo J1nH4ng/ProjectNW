@@ -6,26 +6,26 @@ import { FumadocsIcon } from "@/app/layout.client";
 import Logo from "@/public/logo.png";
 
 export const linkItems: LinkItemType[] = [
-  {
-    icon: <AlbumIcon />,
-    text: "Blog",
-    url: "/blog",
-    active: "nested-url",
-  },
-  {
-    text: "Showcase",
-    url: "/showcase",
-    icon: <LayoutTemplate />,
-    active: "url",
-  },
-  {
-    text: "Sponsors",
-    url: "/sponsors",
-    icon: <Heart />,
-  },
+  // {
+  //   icon: <AlbumIcon />,
+  //   text: "Blog",
+  //   url: "/blog",
+  //   active: "nested-url",
+  // },
+  // {
+  //   text: "Showcase",
+  //   url: "/showcase",
+  //   icon: <LayoutTemplate />,
+  //   active: "url",
+  // },
+  // {
+  //   text: "Sponsors",
+  //   url: "/sponsors",
+  //   icon: <Heart />,
+  // },
   {
     type: "icon",
-    url: "https://github.com/fuma-nama/fumadocs",
+    url: "https://github.com/J1nH4ng/ProjectNW",
     text: "Github",
     icon: (
       <svg role="img" viewBox="0 0 24 24" fill="currentColor">
@@ -56,7 +56,7 @@ export const baseOptions: BaseLayoutProps = {
       <>
         {logo}
         <span className="font-medium [.uwu_&]:hidden [header_&]:text-[15px]">
-          Fumadocs
+          Next Wiki
         </span>
       </>
     ),

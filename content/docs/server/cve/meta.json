@@ -1,0 +1,5 @@
+{
+  "title": "CVE 漏洞修复",
+  "icon": "ShieldCheck",
+  "pages": ["0day", "1day", "1week"]
+}

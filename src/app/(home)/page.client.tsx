@@ -321,7 +321,7 @@ export function PreviewImages() {
           className={cn(previewButtonVariants({ active: active === 0 }))}
           onClick={() => setActive(0)}
         >
-          Docs
+          文档界面
         </button>
         <button
           className={cn(previewButtonVariants({ active: active === 1 }))}
