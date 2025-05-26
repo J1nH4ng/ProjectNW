@@ -1,4 +1,5 @@
 import defaultComponents from "fumadocs-ui/mdx";
+import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
 import { APIPage } from "fumadocs-openapi/ui";
 import { openapi } from "@/lib/source";
 import type { MDXComponents } from "mdx/types";
@@ -11,6 +12,7 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     ...defaultComponents,
     ...Twoslash,
     ...TabsComponents,
+    img: (props) => <ImageZoom {...(props as any)} />,
     Mermaid,
     APIPage: (props) => <APIPage {...openapi.getAPIPageProps(props)} />,
     ...components,
