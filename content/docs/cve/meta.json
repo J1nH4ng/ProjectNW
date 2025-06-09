@@ -1,0 +1,12 @@
+{
+  "title": "CVE 漏洞修复",
+  "description": "CVE 漏洞修复文档",
+  "icon": "ShieldCheck",
+  "root": true,
+  "pages": [
+    "---高危漏洞部分---",
+    "0day/cve-1999-0554",
+    "---中危漏洞部分---",
+    "---低危漏洞部分---"
+  ]
+}

@@ -1,3 +1,9 @@
 {
-  "pages": ["networks", "server", "cloud", "openapi"]
+  "pages": [
+    "networks",
+    "cve",
+    "server",
+    "cloud",
+    "openapi"
+  ]
 }

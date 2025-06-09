@@ -7,8 +7,6 @@
     "---章节介绍---",
     "index",
     "---准备工作---",
-    "prepare/create",
-    "---安全加固---",
-    "cve"
+    "prepare/create"
   ]
 }
