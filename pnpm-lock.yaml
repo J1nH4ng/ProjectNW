@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@orama/tokenizers':
+        specifier: ^3.1.7
+        version: 3.1.7
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -691,6 +694,10 @@ packages:
 
   '@orama/orama@3.1.7':
     resolution: {integrity: sha512-6yB0117ZjsgNevZw3LP+bkrZa9mU/POPVaXgzMPOBbBc35w2P3R+1vMMhEfC06kYCpd5bf0jodBaTkYQW5TVeQ==}
+    engines: {node: '>= 20.0.0'}
+
+  '@orama/tokenizers@3.1.7':
+    resolution: {integrity: sha512-JtUI20XX1/wnXlsnAyb+ddw7yVNRYcZ/J9ft0RLzbZoIYz+UqWp7N1Xxwb5n5i3K2i3g2mVIpQaKBiSqjmx8LQ==}
     engines: {node: '>= 20.0.0'}
 
   '@oxc-transform/binding-darwin-arm64@0.53.0':
@@ -4433,6 +4440,10 @@ snapshots:
       '@octokit/webhooks-methods': 6.0.0
 
   '@orama/orama@3.1.7': {}
+
+  '@orama/tokenizers@3.1.7':
+    dependencies:
+      '@orama/orama': 3.1.7
 
   '@oxc-transform/binding-darwin-arm64@0.53.0':
     optional: true
