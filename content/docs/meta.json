@@ -1,9 +1,8 @@
 {
   "pages": [
     "networks",
-    "cve",
     "server",
     "cloud",
-    "openapi"
+    "cve"
   ]
 }

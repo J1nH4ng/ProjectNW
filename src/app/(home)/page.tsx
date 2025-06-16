@@ -4,7 +4,6 @@ import {
   CpuIcon,
   FileEditIcon,
   FileTextIcon,
-  Heart,
   KeyboardIcon,
   LayoutIcon,
   LibraryIcon,
@@ -29,7 +28,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { CodeBlock } from "@/components/code-block";
 import { UwuHero } from "@/app/(home)/uwu";
 import SourceImage from "@/public/source.png";
-import ContributorCounter from "@/components/contributor-count";
+// import ContributorCounter from "@/components/contributor-count";
 import {
   CreateAppAnimation,
   PreviewImages,
@@ -37,8 +36,8 @@ import {
 } from "./page.client";
 import { NetlifyLogo, VercelLogo } from "./icons";
 import { TypeTable } from "fumadocs-ui/components/type-table";
-import { owner, repo } from "@/lib/github";
-import { Marquee } from "@/app/(home)/marquee";
+// import { owner, repo } from "@/lib/github";
+// import { Marquee } from "@/app/(home)/marquee";
 import ArchImg from "./arch.png";
 
 const badgeVariants = cva(

@@ -10,11 +10,10 @@ import {
 import Link from "fumadocs-core/link";
 import Image from "next/image";
 import Preview from "@/public/banner.png";
+import Beian from "@/public/beian.png";
 import {
   Book,
   ComponentIcon,
-  Pencil,
-  PlusIcon,
   Server,
   ShieldCheck,
 } from "lucide-react";
@@ -141,6 +140,35 @@ function Footer() {
               4R3AL 团队
             </a>
             ❤️ 倾情呈现
+          </p>
+          <p className="text-xs flex items-center gap-1">
+          公安网备：
+            <Image
+              src={Beian}
+              alt="Beian"
+              style={{
+                width: 16
+              }}
+            /> {" "}
+            <a
+              href="https://beian.mps.gov.cn/#/query/webSearch?code=32050502012208"
+              rel="noreferrer noopener"
+              target="_blank"
+              className="font-medium"
+            >
+              苏公网安备32050502012208号
+            </a>
+          </p>
+          <p className="text-xs">
+          ICP 备案号：{" "}
+            <a
+              href="https://beian.miit.gov.cn/"
+              rel="noreferrer noopener"
+              target="_blank"
+              className="font-medium"
+            >
+              苏 ICP 备 2024149705 号 - 1
+            </a>
           </p>
         </div>
       </div>
