@@ -77,9 +77,9 @@ export default function Page() {
             }}
           >
             <h2 className="text-center text-2xl font-semibold sm:text-3xl">
-              Loved by users.
+              为新手构建，
               <br />
-              Built for developers.
+              系统化的知识结构。
             </h2>
           </div>
           <Architecture />
@@ -99,7 +99,7 @@ function Architecture() {
     <div className="flex flex-col gap-4 border-x border-t p-8 md:px-12 lg:flex-row">
       <div className="text-start">
         <p className="px-2 py-1 text-sm font-mono bg-fd-primary text-fd-primary-foreground font-bold w-fit mb-4">
-          Designed with Love
+          完全开源的知识笔记
         </p>
         <h2 className="text-2xl font-semibold mb-4">A breakable framework.</h2>
         <p className="text-fd-muted-foreground mb-6">
@@ -330,7 +330,7 @@ function Highlights(): React.ReactElement {
         </h2>
         <MousePointer className="-ml-1 mt-8" />
       </div>
-      <Highlight icon={TimerIcon} heading="Light & Fast.">
+      <Highlight icon={TimerIcon} heading="更强的功能">
         Less Javascript with React Server Component, and optimized images.
       </Highlight>
       <Highlight icon={LayoutIcon} heading="Accessibility & UX first.">
@@ -399,7 +399,7 @@ function Hero() {
             "repeating-linear-gradient(65deg, var(--color-purple-300), var(--color-purple-300) 12px, color-mix(in oklab, var(--color-blue-600) 30%, transparent) 20px, transparent 200px)",
         }}
       />
-      <h1 className="mb-8 text-4xl font-medium md:hidden">Build Your Docs</h1>
+      <h1 className="mb-8 text-4xl font-medium md:hidden">下一版本的知识库</h1>
       <h1 className="mb-8 max-w-[600px] text-4xl font-medium max-md:hidden">
         下一版本的知识库，
         <br />由 Next.JS 引擎强力驱动。

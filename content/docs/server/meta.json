@@ -1,12 +1,12 @@
 {
   "title": "应用上线部分",
   "description": "一个应用上线的基本流程",
-  "icon": "ServerCog",
+  "icon": "Server",
   "root": true,
   "pages": [
     "---章节介绍---",
-    "index",
+    "4fa62df1",
     "---准备工作---",
-    "prepare/create"
+    "293c8a7a"
   ]
 }

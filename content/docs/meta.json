@@ -1,6 +1,7 @@
 {
   "pages": [
     "networks",
+    "infra",
     "server",
     "cloud",
     "cve"

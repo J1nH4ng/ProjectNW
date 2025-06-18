@@ -3,5 +3,8 @@
   "description": "云原生文档",
   "icon": "Cloud",
   "root": true,
-  "pages": ["---Docker 部分---", "index"]
+  "pages": [
+    "---Docker 部分---", 
+    "index"
+  ]
 }

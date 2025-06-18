@@ -3,5 +3,8 @@
   "description": "内部网络架构设计",
   "icon": "Network",
   "root": true,
-  "pages": ["---章节介绍---", "index"]
+  "pages": [
+    "---章节介绍---", 
+    "6c3aafe2"
+  ]
 }
