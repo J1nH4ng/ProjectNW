@@ -16,6 +16,8 @@ import {
   ComponentIcon,
   Server,
   ShieldCheck,
+  PlusIcon,
+  Pencil,
 } from "lucide-react";
 
 export default function Layout({ children }: { children: ReactNode }) {
@@ -86,7 +88,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   </p>
                 </NavbarMenuLink>
 
-                {/* <NavbarMenuLink
+                <NavbarMenuLink
                   href="/docs/ui/markdown"
                   className="lg:col-start-3 lg:row-start-1"
                 >
@@ -106,7 +108,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <p className="text-fd-muted-foreground text-sm">
                     Setup Fumadocs for your existing Next.js app.
                   </p>
-                </NavbarMenuLink> */}
+                </NavbarMenuLink>
               </NavbarMenuContent>
             </NavbarMenu>
           ),
@@ -127,7 +129,7 @@ function Footer() {
       <div className="container flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="mb-1 text-sm font-semibold">
-            由 Next.JS 引擎和 Fumadocs 框架强力驱动的下一版本知识库.
+            由 Next.JS 引擎和 Fumadocs 框架强力驱动的新版知识库.
           </p>
           <p className="text-xs">
             由{" "}
@@ -156,7 +158,7 @@ function Footer() {
               target="_blank"
               className="font-medium"
             >
-              苏公网安备32050502012208号
+              苏公网安备 32050502012208 号
             </a>
           </p>
           <p className="text-xs">
