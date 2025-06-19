@@ -4,6 +4,7 @@
     "infra",
     "server",
     "cloud",
-    "cve"
+    "cve",
+    "chklist"
   ]
 }

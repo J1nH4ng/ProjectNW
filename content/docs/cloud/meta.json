@@ -4,7 +4,6 @@
   "icon": "Cloud",
   "root": true,
   "pages": [
-    "---Docker 部分---", 
-    "index"
+    "---Docker 部分---"
   ]
 }

@@ -48,11 +48,11 @@ export default function Layout({ children }: { children: ReactNode }) {
           children: (
             <NavbarMenu>
               <NavbarMenuTrigger>
-                <Link href="/docs/networks">文档部分</Link>
+                <Link href="/docs/networks/6c3aafe2">文档部分</Link>
               </NavbarMenuTrigger>
               <NavbarMenuContent className="text-[15px]">
-                <NavbarMenuLink href="/docs/networks" className="md:row-span-2">
-                  <div className="-mx-3 -mt-3">
+                <NavbarMenuLink href="/docs/networks/6c3aafe2" className="md:row-span-2">
+                  {/* <div className="-mx-3 -mt-3">
                     <Image
                       src={Preview}
                       alt="Perview"
@@ -62,14 +62,14 @@ export default function Layout({ children }: { children: ReactNode }) {
                           "linear-gradient(to bottom,white 60%,transparent)",
                       }}
                     />
-                  </div>
+                  </div> */}
                   <p className="font-medium">快速开始</p>
                   <p className="text-fd-muted-foreground text-sm">
                     从头开始阅读文档内容
                   </p>
                 </NavbarMenuLink>
 
-                <NavbarMenuLink
+                {/* <NavbarMenuLink
                   href="/docs/server/cve"
                   className="lg:col-start-2"
                 >
@@ -108,7 +108,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <p className="text-fd-muted-foreground text-sm">
                     Setup Fumadocs for your existing Next.js app.
                   </p>
-                </NavbarMenuLink>
+                </NavbarMenuLink> */}
               </NavbarMenuContent>
             </NavbarMenu>
           ),

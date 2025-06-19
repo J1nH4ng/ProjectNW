@@ -21,30 +21,30 @@ import {
   ListTodo,
   Download,
 } from "lucide-react";
-import { File, Files, Folder } from "fumadocs-ui/components/files";
+// import { File, Files, Folder } from "fumadocs-ui/components/files";
 import Link from "next/link";
 import type { HTMLAttributes, ReactNode } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
 import { buttonVariants } from "@/components/ui/button";
-import { CodeBlock } from "@/components/code-block";
+// import { CodeBlock } from "@/components/code-block";
 import { UwuHero } from "@/app/(home)/uwu";
-import SourceImage from "@/public/source.png";
+// import SourceImage from "@/public/source.png";
 // import ContributorCounter from "@/components/contributor-count";
 import {
   CreateAppAnimation,
   PreviewImages,
   WhyInteractive,
 } from "./page.client";
-import { NetlifyLogo, VercelLogo } from "./icons";
-import { TypeTable } from "fumadocs-ui/components/type-table";
+// import { NetlifyLogo, VercelLogo } from "./icons";
+// import { TypeTable } from "fumadocs-ui/components/type-table";
 // import { owner, repo } from "@/lib/github";
 // import { Marquee } from "@/app/(home)/marquee";
 import ArchImg from "./arch.png";
 
-const badgeVariants = cva(
-  "inline-flex size-7 items-center justify-center rounded-full bg-fd-primary font-medium text-fd-primary-foreground",
-);
+// const badgeVariants = cva(
+//   "inline-flex size-7 items-center justify-center rounded-full bg-fd-primary font-medium text-fd-primary-foreground",
+// );
 
 export default function Page() {
   const gridColor =
@@ -117,83 +117,83 @@ function Architecture() {
   );
 }
 
-async function Why() {
-  return (
-    <div className="relative overflow-hidden border-x border-t p-2">
-      <WhyInteractive
-        typeTable={
-          <TypeTable
-            type={{
-              name: {
-                type: "string",
-                description: "The name of player",
-                default: "hello",
-              },
-              code: {
-                type: "string",
-                description: (
-                  <CodeBlock lang="ts" code='console.log("Hello World")' />
-                ),
-              },
-            }}
-          />
-        }
-        codeblockSearchRouter={
-          <CodeBlock
-            lang="ts"
-            code={`import { source } from '@/lib/source';
-import { createFromSource } from 'fumadocs-core/search/server';
+// async function Why() {
+//   return (
+//     <div className="relative overflow-hidden border-x border-t p-2">
+//       <WhyInteractive
+//         typeTable={
+//           <TypeTable
+//             type={{
+//               name: {
+//                 type: "string",
+//                 description: "The name of player",
+//                 default: "hello",
+//               },
+//               code: {
+//                 type: "string",
+//                 description: (
+//                   <CodeBlock lang="ts" code='console.log("Hello World")' />
+//                 ),
+//               },
+//             }}
+//           />
+//         }
+//         codeblockSearchRouter={
+//           <CodeBlock
+//             lang="ts"
+//             code={`import { source } from '@/lib/source';
+// import { createFromSource } from 'fumadocs-core/search/server';
 
-export const { GET } = createFromSource(source);`}
-          />
-        }
-        codeblockTheme={
-          <CodeBlock
-            lang="css"
-            code={`@import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';`}
-          />
-        }
-        codeblockInteractive={
-          <CodeBlock
-            lang="tsx"
-            code={`import { File, Folder, Files } from 'fumadocs-ui/components/files';
+// export const { GET } = createFromSource(source);`}
+//           />
+//         }
+//         codeblockTheme={
+//           <CodeBlock
+//             lang="css"
+//             code={`@import 'tailwindcss';
+// @import 'fumadocs-ui/css/neutral.css';
+// @import 'fumadocs-ui/css/preset.css';`}
+//           />
+//         }
+//         codeblockInteractive={
+//           <CodeBlock
+//             lang="tsx"
+//             code={`import { File, Folder, Files } from 'fumadocs-ui/components/files';
 
-<Files>
-  <Folder name="app" defaultOpen>
-    <File name="layout.tsx" />
-    <File name="page.tsx" />
-    <File name="global.css" />
-  </Folder>
-  <File name="package.json" />
-</Files>`}
-          />
-        }
-        codeblockMdx={
-          <CodeBlock
-            lang="tsx"
-            code={`import { db } from '@/server/db';
+// <Files>
+//   <Folder name="app" defaultOpen>
+//     <File name="layout.tsx" />
+//     <File name="page.tsx" />
+//     <File name="global.css" />
+//   </Folder>
+//   <File name="package.json" />
+// </Files>`}
+//           />
+//         }
+//         codeblockMdx={
+//           <CodeBlock
+//             lang="tsx"
+//             code={`import { db } from '@/server/db';
 
-export function ProductTable() {
-  const products = db.getProducts()
+// export function ProductTable() {
+//   const products = db.getProducts()
 
-  return (
-    <ul>
-      {products.map(product => <li key={product.key}>{product.name}</li>)}
-    </ul>
-  );
-}
+//   return (
+//     <ul>
+//       {products.map(product => <li key={product.key}>{product.name}</li>)}
+//     </ul>
+//   );
+// }
 
-## Products
+// ## Products
 
-<ProductTable />`}
-          />
-        }
-      />
-    </div>
-  );
-}
+// <ProductTable />`}
+//           />
+//         }
+//       />
+//     </div>
+//   );
+// }
 
 function End() {
   return (
@@ -284,43 +284,43 @@ function End() {
   );
 }
 
-const searchItemVariants = cva(
-  "flex flex-row items-center gap-2 rounded-md p-2 text-sm text-fd-popover-foreground",
-);
+// const searchItemVariants = cva(
+//   "flex flex-row items-center gap-2 rounded-md p-2 text-sm text-fd-popover-foreground",
+// );
 
-function Search(): React.ReactElement {
-  return (
-    <div className="mt-6 rounded-lg bg-gradient-to-b from-fd-border p-px">
-      <div className="flex select-none flex-col rounded-[inherit] bg-gradient-to-b from-fd-popover">
-        <div className="inline-flex items-center gap-2 px-4 py-2 text-sm text-fd-muted-foreground">
-          <SearchIcon className="size-4" />
-          点击搜索……
-        </div>
-        <div className="border-t p-2">
-          {[
-            "Getting Started",
-            "Components",
-            "MDX Content",
-            "User Guide",
-            "Javascript SDK",
-          ].map((v, i) => (
-            <div
-              key={v}
-              className={cn(
-                searchItemVariants({
-                  className: i === 0 ? "bg-fd-accent" : "",
-                }),
-              )}
-            >
-              <FileTextIcon className="size-4 text-fd-muted-foreground" />
-              {v}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+// function Search(): React.ReactElement {
+//   return (
+//     <div className="mt-6 rounded-lg bg-gradient-to-b from-fd-border p-px">
+//       <div className="flex select-none flex-col rounded-[inherit] bg-gradient-to-b from-fd-popover">
+//         <div className="inline-flex items-center gap-2 px-4 py-2 text-sm text-fd-muted-foreground">
+//           <SearchIcon className="size-4" />
+//           点击搜索……
+//         </div>
+//         <div className="border-t p-2">
+//           {[
+//             "Getting Started",
+//             "Components",
+//             "MDX Content",
+//             "User Guide",
+//             "Javascript SDK",
+//           ].map((v, i) => (
+//             <div
+//               key={v}
+//               className={cn(
+//                 searchItemVariants({
+//                   className: i === 0 ? "bg-fd-accent" : "",
+//                 }),
+//               )}
+//             >
+//               <FileTextIcon className="size-4 text-fd-muted-foreground" />
+//               {v}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 function Highlights(): React.ReactElement {
   return (
@@ -510,65 +510,65 @@ function Hero() {
 //   );
 // }
 
-function Introduction(): React.ReactElement {
-  return (
-    <div className="grid grid-cols-1 border-r md:grid-cols-2">
-      <div className="flex flex-col gap-2 border-l border-t px-6 py-12 md:py-16">
-        <div className={cn(badgeVariants())}>1</div>
-        <h3 className="text-xl font-semibold">Create it.</h3>
-        <p className="mb-8 text-fd-muted-foreground">
-          Initialize a new docs with a command.
-        </p>
-        <CreateAppAnimation />
-      </div>
-      <div className="flex flex-col gap-2 border-l border-t px-6 py-12 md:py-16">
-        <div className={cn(badgeVariants())}>2</div>
-        <h3 className="text-xl font-semibold">Write.</h3>
-        <p className="text-fd-muted-foreground">
-          Write content, with automation tools & type-safe data validation.
-        </p>
-        <div className="relative flex flex-col">
-          <CodeBlock
-            lang="mdx"
-            wrapper={{
-              className: "absolute inset-x-2 top-0 shadow-lg",
-            }}
-            code={`---
-title: My Documentation
----
+// function Introduction(): React.ReactElement {
+//   return (
+//     <div className="grid grid-cols-1 border-r md:grid-cols-2">
+//       <div className="flex flex-col gap-2 border-l border-t px-6 py-12 md:py-16">
+//         <div className={cn(badgeVariants())}>1</div>
+//         <h3 className="text-xl font-semibold">Create it.</h3>
+//         <p className="mb-8 text-fd-muted-foreground">
+//           Initialize a new docs with a command.
+//         </p>
+//         <CreateAppAnimation />
+//       </div>
+//       <div className="flex flex-col gap-2 border-l border-t px-6 py-12 md:py-16">
+//         <div className={cn(badgeVariants())}>2</div>
+//         <h3 className="text-xl font-semibold">Write.</h3>
+//         <p className="text-fd-muted-foreground">
+//           Write content, with automation tools & type-safe data validation.
+//         </p>
+//         <div className="relative flex flex-col">
+//           <CodeBlock
+//             lang="mdx"
+//             wrapper={{
+//               className: "absolute inset-x-2 top-0 shadow-lg",
+//             }}
+//             code={`---
+// title: My Documentation
+// ---
 
-## Introduction
+// ## Introduction
 
-Hello World
-`}
-          />
-          <Files className="z-[2] mt-40 shadow-xl">
-            <Folder name="content" defaultOpen>
-              <File name="index.mdx" />
-              <File name="components.mdx" />
-            </Folder>
-          </Files>
-        </div>
-      </div>
-      <div className="col-span-full flex flex-col items-center gap-2 border-l border-t px-6 py-16 text-center">
-        <div className={cn(badgeVariants())}>3</div>
-        <h3 className="text-2xl font-semibold">Ship.</h3>
-        <p className="text-fd-muted-foreground">
-          Deploy your docs easily with Next.js compatible hosting platforms.
-        </p>
+// Hello World
+// `}
+//           />
+//           <Files className="z-[2] mt-40 shadow-xl">
+//             <Folder name="content" defaultOpen>
+//               <File name="index.mdx" />
+//               <File name="components.mdx" />
+//             </Folder>
+//           </Files>
+//         </div>
+//       </div>
+//       <div className="col-span-full flex flex-col items-center gap-2 border-l border-t px-6 py-16 text-center">
+//         <div className={cn(badgeVariants())}>3</div>
+//         <h3 className="text-2xl font-semibold">Ship.</h3>
+//         <p className="text-fd-muted-foreground">
+//           Deploy your docs easily with Next.js compatible hosting platforms.
+//         </p>
 
-        <div className="mt-4 flex flex-row flex-wrap items-center gap-8">
-          <a href="https://vercel.com" rel="noreferrer noopener">
-            <VercelLogo className="h-auto w-32" />
-          </a>
-          <a href="https://netlify.com" rel="noreferrer noopener">
-            <NetlifyLogo className="h-auto w-32" />
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
+//         <div className="mt-4 flex flex-row flex-wrap items-center gap-8">
+//           <a href="https://vercel.com" rel="noreferrer noopener">
+//             <VercelLogo className="h-auto w-32" />
+//           </a>
+//           <a href="https://netlify.com" rel="noreferrer noopener">
+//             <NetlifyLogo className="h-auto w-32" />
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 // function Contributing() {
 //   return (
@@ -600,174 +600,174 @@ Hello World
 //   );
 // }
 
-function Features() {
-  return (
-    <div className="grid grid-cols-1 border-r md:grid-cols-2">
-      <Feature
-        icon={PaperclipIcon}
-        subheading="Source Agnostic"
-        heading="Your source. Your choice"
-        description={
-          <>
-            <span className="font-medium text-fd-foreground">
-              Designed to integrate with any content source:{" "}
-            </span>
-            <span>
-              Fumadocs works on MDX, Content Collections, and even your own CMS.
-            </span>
-          </>
-        }
-        className="overflow-hidden"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 60% 50%,var(--color-fd-secondary),var(--color-fd-background) 80%)",
-        }}
-      >
-        <div className="mt-8 flex flex-col">
-          <div className="flex flex-row w-fit bg-fd-secondary border rounded-full *:rounded-full">
-            <a
-              href="https://github.com/fuma-nama/fumadocs-basehub"
-              rel="noreferrer noopener"
-              target="_blank"
-              className={cn(buttonVariants({ variant: "outline" }))}
-            >
-              BaseHub CMS example
-            </a>
-            <a
-              href="https://github.com/fuma-nama/fumadocs-sanity"
-              rel="noreferrer noopener"
-              target="_blank"
-              className={cn(buttonVariants({ variant: "ghost" }))}
-            >
-              Sanity example
-            </a>
-          </div>
-          <Image
-            alt="Source"
-            src={SourceImage}
-            sizes="600px"
-            className="-mt-16 w-[400px] min-w-[400px] invert pointer-events-none dark:invert-0"
-          />
-          <div className="z-[2] mt-[-170px] w-[300px] overflow-hidden rounded-lg border border-fd-foreground/10 shadow-xl backdrop-blur-lg">
-            <div className="flex flex-row items-center gap-2 bg-fd-muted/50 px-4 py-2 text-xs font-medium text-fd-muted-foreground">
-              <FileEditIcon className="size-4" />
-              MDX Editor
-            </div>
-            <pre className="p-4 text-[13px]">
-              <code className="grid">
-                <span className="font-medium"># Hello World!</span>
-                <span>This is my first document.</span>
-                <span>{` `}</span>
-                <span className="font-medium">{`<ServerComponent />`}</span>
-              </code>
-            </pre>
-          </div>
-        </div>
-      </Feature>
-      <Feature
-        icon={SearchIcon}
-        subheading="Search Integration"
-        heading="Enhance your search experience."
-        description="Integrate with Orama Search and Algolia Search in your docs easily."
-      >
-        <Link
-          href="/docs/headless/search/algolia"
-          className={cn(
-            buttonVariants({ variant: "outline", className: "mt-4" }),
-          )}
-        >
-          Learn More
-        </Link>
-        <Search />
-      </Feature>
-      <Feature
-        icon={Terminal}
-        subheading="Fumadocs CLI"
-        heading="The Shadcn UI for docs"
-        description="Fumadocs CLI creates interactive components for your docs, offering a rich experience to your users."
-      >
-        <div className="relative">
-          <div className="grid grid-cols-[1fr_2fr_1fr] h-[220px] *:border-fd-foreground/50 *:border-dashed mask-radial-circle mask-radial-from-white">
-            <div className="border-r border-b" />
-            <div className="border-b" />
-            <div className="border-l border-b" />
+// function Features() {
+//   return (
+//     <div className="grid grid-cols-1 border-r md:grid-cols-2">
+//       <Feature
+//         icon={PaperclipIcon}
+//         subheading="Source Agnostic"
+//         heading="Your source. Your choice"
+//         description={
+//           <>
+//             <span className="font-medium text-fd-foreground">
+//               Designed to integrate with any content source:{" "}
+//             </span>
+//             <span>
+//               Fumadocs works on MDX, Content Collections, and even your own CMS.
+//             </span>
+//           </>
+//         }
+//         className="overflow-hidden"
+//         style={{
+//           backgroundImage:
+//             "radial-gradient(circle at 60% 50%,var(--color-fd-secondary),var(--color-fd-background) 80%)",
+//         }}
+//       >
+//         <div className="mt-8 flex flex-col">
+//           <div className="flex flex-row w-fit bg-fd-secondary border rounded-full *:rounded-full">
+//             <a
+//               href="https://github.com/fuma-nama/fumadocs-basehub"
+//               rel="noreferrer noopener"
+//               target="_blank"
+//               className={cn(buttonVariants({ variant: "outline" }))}
+//             >
+//               BaseHub CMS example
+//             </a>
+//             <a
+//               href="https://github.com/fuma-nama/fumadocs-sanity"
+//               rel="noreferrer noopener"
+//               target="_blank"
+//               className={cn(buttonVariants({ variant: "ghost" }))}
+//             >
+//               Sanity example
+//             </a>
+//           </div>
+//           <Image
+//             alt="Source"
+//             src={SourceImage}
+//             sizes="600px"
+//             className="-mt-16 w-[400px] min-w-[400px] invert pointer-events-none dark:invert-0"
+//           />
+//           <div className="z-[2] mt-[-170px] w-[300px] overflow-hidden rounded-lg border border-fd-foreground/10 shadow-xl backdrop-blur-lg">
+//             <div className="flex flex-row items-center gap-2 bg-fd-muted/50 px-4 py-2 text-xs font-medium text-fd-muted-foreground">
+//               <FileEditIcon className="size-4" />
+//               MDX Editor
+//             </div>
+//             <pre className="p-4 text-[13px]">
+//               <code className="grid">
+//                 <span className="font-medium"># Hello World!</span>
+//                 <span>This is my first document.</span>
+//                 <span>{` `}</span>
+//                 <span className="font-medium">{`<ServerComponent />`}</span>
+//               </code>
+//             </pre>
+//           </div>
+//         </div>
+//       </Feature>
+//       <Feature
+//         icon={SearchIcon}
+//         subheading="Search Integration"
+//         heading="Enhance your search experience."
+//         description="Integrate with Orama Search and Algolia Search in your docs easily."
+//       >
+//         <Link
+//           href="/docs/headless/search/algolia"
+//           className={cn(
+//             buttonVariants({ variant: "outline", className: "mt-4" }),
+//           )}
+//         >
+//           Learn More
+//         </Link>
+//         <Search />
+//       </Feature>
+//       <Feature
+//         icon={Terminal}
+//         subheading="Fumadocs CLI"
+//         heading="The Shadcn UI for docs"
+//         description="Fumadocs CLI creates interactive components for your docs, offering a rich experience to your users."
+//       >
+//         <div className="relative">
+//           <div className="grid grid-cols-[1fr_2fr_1fr] h-[220px] *:border-fd-foreground/50 *:border-dashed mask-radial-circle mask-radial-from-white">
+//             <div className="border-r border-b" />
+//             <div className="border-b" />
+//             <div className="border-l border-b" />
 
-            <div className="border-r" />
-            <div className="w-[200px]" />
-            <div className="border-l" />
+//             <div className="border-r" />
+//             <div className="w-[200px]" />
+//             <div className="border-l" />
 
-            <div className="border-r border-t" />
-            <div className="border-t" />
-            <div className="border-l border-t" />
-          </div>
-          <code className="absolute inset-0 flex items-center justify-center">
-            <code className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-fd-foreground font-medium">
-              npx @fumadocs/cli add
-            </code>
-          </code>
-        </div>
-      </Feature>
-      <Feature
-        icon={CpuIcon}
-        subheading="Robust"
-        heading="Flexibility that cover your needs."
-        description="Well documented, separated in packages."
-      >
-        <div className="mt-8 flex flex-col gap-4">
-          <Link
-            href="/docs/ui"
-            className="rounded-xl bg-gradient-to-br from-transparent via-fd-primary p-px shadow-lg shadow-fd-primary/20"
-          >
-            <div className="rounded-[inherit] bg-fd-background bg-gradient-to-br from-transparent via-fd-primary/10 p-4 transition-colors hover:bg-fd-muted">
-              <LayoutIcon />
-              <h3 className="font-semibold">Fumadocs UI</h3>
-              <p className="text-sm text-fd-muted-foreground">
-                Default theme of Fumadocs with many useful components.
-              </p>
-            </div>
-          </Link>
-          <Link
-            href="/docs/headless"
-            className="rounded-xl border bg-fd-background p-4 shadow-lg transition-colors hover:bg-fd-muted"
-          >
-            <LibraryIcon />
-            <h3 className="font-semibold">Core</h3>
-            <p className="text-sm text-fd-muted-foreground">
-              Headless library with a useful set of utilities.
-            </p>
-          </Link>
-        </div>
-      </Feature>
-    </div>
-  );
-}
+//             <div className="border-r border-t" />
+//             <div className="border-t" />
+//             <div className="border-l border-t" />
+//           </div>
+//           <code className="absolute inset-0 flex items-center justify-center">
+//             <code className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-fd-foreground font-medium">
+//               npx @fumadocs/cli add
+//             </code>
+//           </code>
+//         </div>
+//       </Feature>
+//       <Feature
+//         icon={CpuIcon}
+//         subheading="Robust"
+//         heading="Flexibility that cover your needs."
+//         description="Well documented, separated in packages."
+//       >
+//         <div className="mt-8 flex flex-col gap-4">
+//           <Link
+//             href="/docs/ui"
+//             className="rounded-xl bg-gradient-to-br from-transparent via-fd-primary p-px shadow-lg shadow-fd-primary/20"
+//           >
+//             <div className="rounded-[inherit] bg-fd-background bg-gradient-to-br from-transparent via-fd-primary/10 p-4 transition-colors hover:bg-fd-muted">
+//               <LayoutIcon />
+//               <h3 className="font-semibold">Fumadocs UI</h3>
+//               <p className="text-sm text-fd-muted-foreground">
+//                 Default theme of Fumadocs with many useful components.
+//               </p>
+//             </div>
+//           </Link>
+//           <Link
+//             href="/docs/headless"
+//             className="rounded-xl border bg-fd-background p-4 shadow-lg transition-colors hover:bg-fd-muted"
+//           >
+//             <LibraryIcon />
+//             <h3 className="font-semibold">Core</h3>
+//             <p className="text-sm text-fd-muted-foreground">
+//               Headless library with a useful set of utilities.
+//             </p>
+//           </Link>
+//         </div>
+//       </Feature>
+//     </div>
+//   );
+// }
 
-function Feature({
-  className,
-  icon: Icon,
-  heading,
-  subheading,
-  description,
-  ...props
-}: HTMLAttributes<HTMLDivElement> & {
-  icon: LucideIcon;
-  subheading: ReactNode;
-  heading: ReactNode;
-  description: ReactNode;
-}): React.ReactElement {
-  return (
-    <div
-      className={cn("border-l border-t px-6 py-12 md:py-16", className)}
-      {...props}
-    >
-      <div className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-fd-muted-foreground">
-        <Icon className="size-4" />
-        <p>{subheading}</p>
-      </div>
-      <h2 className="mb-2 text-lg font-semibold">{heading}</h2>
-      <p className="text-fd-muted-foreground">{description}</p>
+// function Feature({
+//   className,
+//   icon: Icon,
+//   heading,
+//   subheading,
+//   description,
+//   ...props
+// }: HTMLAttributes<HTMLDivElement> & {
+//   icon: LucideIcon;
+//   subheading: ReactNode;
+//   heading: ReactNode;
+//   description: ReactNode;
+// }): React.ReactElement {
+//   return (
+//     <div
+//       className={cn("border-l border-t px-6 py-12 md:py-16", className)}
+//       {...props}
+//     >
+//       <div className="mb-4 inline-flex items-center gap-2 text-sm font-medium text-fd-muted-foreground">
+//         <Icon className="size-4" />
+//         <p>{subheading}</p>
+//       </div>
+//       <h2 className="mb-2 text-lg font-semibold">{heading}</h2>
+//       <p className="text-fd-muted-foreground">{description}</p>
 
-      {props.children}
-    </div>
-  );
-}
+//       {props.children}
+//     </div>
+//   );
+// }
