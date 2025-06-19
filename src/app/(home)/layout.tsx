@@ -9,15 +9,15 @@ import {
 } from "fumadocs-ui/layouts/home/navbar";
 import Link from "fumadocs-core/link";
 import Image from "next/image";
-import Preview from "@/public/banner.png";
+// import Preview from "@/public/banner.png";
 import Beian from "@/public/beian.png";
 import {
   Book,
   ComponentIcon,
-  Server,
-  ShieldCheck,
-  PlusIcon,
-  Pencil,
+  // Server,
+  // ShieldCheck,
+  // PlusIcon,
+  // Pencil,
 } from "lucide-react";
 
 export default function Layout({ children }: { children: ReactNode }) {

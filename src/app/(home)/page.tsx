@@ -1,19 +1,19 @@
-import { cva } from "class-variance-authority";
+// import { cva } from "class-variance-authority";
 import {
   BatteryChargingIcon,
-  CpuIcon,
-  FileEditIcon,
-  FileTextIcon,
+  // CpuIcon,
+  // FileEditIcon,
+  // FileTextIcon,
   ListTree,
-  LayoutIcon,
-  LibraryIcon,
+  // LayoutIcon,
+  // LibraryIcon,
   type LucideIcon,
   MousePointer,
-  PaperclipIcon,
+  // PaperclipIcon,
   PocketKnife,
   AtSign,
-  SearchIcon,
-  Terminal,
+  // SearchIcon,
+  // Terminal,
   AppWindowMac,
   BadgeCheck,
   Workflow,
@@ -23,7 +23,10 @@ import {
 } from "lucide-react";
 // import { File, Files, Folder } from "fumadocs-ui/components/files";
 import Link from "next/link";
-import type { HTMLAttributes, ReactNode } from "react";
+import type { 
+  // HTMLAttributes, 
+  ReactNode 
+} from "react";
 import Image from "next/image";
 import { cn } from "@/lib/cn";
 import { buttonVariants } from "@/components/ui/button";
@@ -32,9 +35,9 @@ import { UwuHero } from "@/app/(home)/uwu";
 // import SourceImage from "@/public/source.png";
 // import ContributorCounter from "@/components/contributor-count";
 import {
-  CreateAppAnimation,
+  // CreateAppAnimation,
   PreviewImages,
-  WhyInteractive,
+  // WhyInteractive,
 } from "./page.client";
 // import { NetlifyLogo, VercelLogo } from "./icons";
 // import { TypeTable } from "fumadocs-ui/components/type-table";
