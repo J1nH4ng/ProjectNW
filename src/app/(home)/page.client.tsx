@@ -327,7 +327,7 @@ export function PreviewImages() {
           className={cn(previewButtonVariants({ active: active === 1 }))}
           onClick={() => setActive(1)}
         >
-          OpenAPI
+          接口界面
         </button>
       </div>
       <Image

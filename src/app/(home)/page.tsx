@@ -4,20 +4,22 @@ import {
   CpuIcon,
   FileEditIcon,
   FileTextIcon,
-  KeyboardIcon,
+  ListTree,
   LayoutIcon,
   LibraryIcon,
   type LucideIcon,
   MousePointer,
   PaperclipIcon,
-  PersonStandingIcon,
-  RocketIcon,
+  PocketKnife,
+  AtSign,
   SearchIcon,
   Terminal,
-  TimerIcon,
+  AppWindowMac,
   BadgeCheck,
   Workflow,
   GraduationCap,
+  ListTodo,
+  Download,
 } from "lucide-react";
 import { File, Files, Folder } from "fumadocs-ui/components/files";
 import Link from "next/link";
@@ -68,7 +70,7 @@ export default function Page() {
             <UwuHero />
           </div>
           {/* <Feedback /> */}
-          <Introduction />
+          {/* <Introduction /> */}
           <div
             className="relative overflow-hidden border-x border-t px-8 py-16 sm:py-24"
             style={{
@@ -83,9 +85,9 @@ export default function Page() {
             </h2>
           </div>
           <Architecture />
-          <Features />
+          {/* <Features /> */}
           <Highlights />
-          <Why />
+          {/* <Why /> */}
           {/* <Contributing /> */}
           <End />
         </div>
@@ -101,10 +103,9 @@ function Architecture() {
         <p className="px-2 py-1 text-sm font-mono bg-fd-primary text-fd-primary-foreground font-bold w-fit mb-4">
           完全开源的知识笔记
         </p>
-        <h2 className="text-2xl font-semibold mb-4">A breakable framework.</h2>
+        <h2 className="text-2xl font-semibold mb-4">基于优秀的笔记框架</h2>
         <p className="text-fd-muted-foreground mb-6">
-          Fumadocs makes it easy to build beautiful docs, write content, and
-          transform content into data for your React.js framework.
+          基于 Fumadocs 框架重新构建，得益于 React 强大的生态系统和 Fumadocs 优秀的架构设计，实现了更多的功能与令人舒适的统一 UI 风格。
         </p>
       </div>
       <Image
@@ -293,7 +294,7 @@ function Search(): React.ReactElement {
       <div className="flex select-none flex-col rounded-[inherit] bg-gradient-to-b from-fd-popover">
         <div className="inline-flex items-center gap-2 px-4 py-2 text-sm text-fd-muted-foreground">
           <SearchIcon className="size-4" />
-          Search...
+          点击搜索……
         </div>
         <div className="border-t p-2">
           {[
@@ -330,29 +331,27 @@ function Highlights(): React.ReactElement {
         </h2>
         <MousePointer className="-ml-1 mt-8" />
       </div>
-      <Highlight icon={TimerIcon} heading="更强的功能">
-        Less Javascript with React Server Component, and optimized images.
+      <Highlight icon={ListTodo} heading="完善的检查列表">
+        对于每一部分的工作内容，提供一份完整详细的检查列表，确保工作完成的可靠性和可维护性。
       </Highlight>
-      <Highlight icon={LayoutIcon} heading="Accessibility & UX first.">
-        Focus on user experience and accessibility.
+      <Highlight icon={AppWindowMac} heading="完整的操作步骤">
+        对于需要在浏览器窗口完成的后续操作，会提供添加备注和详细说明的截图，以便于理解和使用。
       </Highlight>
-      <Highlight icon={RocketIcon} heading="Next.js First.">
-        Powerful documentation site with Next.js, React Router, or Tanstack
-        Start.
+      <Highlight icon={AtSign} heading="友好的技术支持">
+        对于无法理解和有错误的地方，欢迎联系友好交流，共同进步。
       </Highlight>
-      <Highlight icon={SearchIcon} heading="Syntax Highlighting.">
-        Beautiful syntax highlighter, powered by{" "}
-        <a href="https://shiki.style" rel="noreferrer noopener">
-          Shiki
+      <Highlight icon={Download} heading="实用的文件下载">
+        提供实用的文件下载功能，由{" "}
+        <a href="https://repoflow.io/" rel="noreferrer noopener">
+          <u>&nbsp;Repoflow&nbsp;</u>
         </a>
-        .
+        开源软件实现。
       </Highlight>
-      <Highlight icon={KeyboardIcon} heading="Automation.">
-        Useful remark/rehype plugins. Typescript Twoslash, OpenAPI docs
-        generation, and more.
+      <Highlight icon={ListTree} heading="更好的目录分类">
+        基于 Fumadocs 框架的强大能力，实现更优雅的目录结构分类。
       </Highlight>
-      <Highlight icon={PersonStandingIcon} heading="Personalized.">
-        Advanced options for customising your theme in a comfortable way.
+      <Highlight icon={PocketKnife} heading="最终的目标愿望">
+        争取成为您工作中的瑞士军刀，方便且实用。
       </Highlight>
     </div>
   );
@@ -410,7 +409,7 @@ function Hero() {
       </p>
       <div className="inline-flex items-center gap-3 max-md:mx-auto">
         <Link
-          href="/docs/networks"
+          href="/docs/networks/6c3aafe2"
           className={cn(
             buttonVariants({ size: "lg", className: "rounded-full" }),
           )}
