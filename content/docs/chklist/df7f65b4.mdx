@@ -3,3 +3,43 @@ title: 服务器初始化检查列表
 description: 服务器初始化检查详细列表
 icon: FileCheck
 ---
+
+import { Banner } from 'fumadocs-ui/components/banner';
+
+<Banner variant="rainbow" changeLayout={false}>
+文档编写完成，请下载使用
+</Banner>
+
+- [ ] 服务器 IP 是否为固定 IP 地址
+- [ ] 服务器的 CPU 架构
+    - [ ] ARM 64 或 AMD 64
+- [ ] 各服务器之间的横向 SSH 通信检查
+- [ ] 服务器密码强弱性检查
+    - [ ] 服务器密码 Excel 整理
+- [ ] 修改镜像源
+- [ ] 配置 History 格式
+- [ ] 安装依赖
+- [ ] 时钟同步
+- [ ] 数据磁盘部分
+    - [ ] 磁盘挂载至虚拟机
+    - [ ] 磁盘类型测试
+    - [ ] 配置 LVM
+- [ ] 升级 OpenSSL、
+    - [ ] 版本确定
+- [ ] 升级 OpenSSH
+    - [ ] 版本确定
+    - [ ] 禁用特定算法
+- [ ] 修改 SSH 默认设置
+    - [ ] 修改 SSH 的连接协议
+    - [ ] 修改默认的 22 端口
+    - [ ] 结束空闲会话
+    - [ ] 显示最后一次登录
+    - [ ] 禁止 Root 用户远程登录
+    - [ ] 禁止 su 命令切换用户
+    - [ ] 配置 Fail2Ban
+- [ ] 防火墙状态修改
+- [ ] SeLinux 配置修改
+- [ ] 性能优化
+    - [ ] 最大文件打开数
+    - [ ] 内核参数调整
+- [ ] 显卡驱动安装
