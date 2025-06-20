@@ -3,7 +3,12 @@
     "networks",
     "infra",
     "server",
+    "monitor",
     "cloud",
+    "autodev",
+    "IaC",
+    "move",
+    "upgrade",
     "cve",
     "chklist"
   ]

@@ -1,7 +1,7 @@
 {
   "title": "云原生部分",
   "description": "云原生文档",
-  "icon": "Cloud",
+  "icon": "Container",
   "root": true,
   "pages": [
     "---Docker 部分---"

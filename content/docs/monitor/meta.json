@@ -1,0 +1,9 @@
+{
+    "title": "应用监控部分",
+    "description": "应用上线后的监控配置",
+    "icon": "Activity",
+    "root": true,
+    "pages": [
+        "---Zabbix 部分---"
+    ]
+}

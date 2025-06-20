@@ -1,0 +1,9 @@
+{
+    "title": "自动化运维部分",
+    "description": "自动化运维文档",
+    "icon": "Workflow",
+    "root": true,
+    "pages": [
+        "---Ansible 部分---"
+    ]
+}

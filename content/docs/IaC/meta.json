@@ -1,0 +1,10 @@
+{
+    "title": "IaC 部分",
+    "description": "基础架构即代码部分文档",
+    "icon": "Codesandbox",
+    "root": true,
+    "pages": [
+        "79eac346",
+        "---Terraform 部分---"
+    ]
+}

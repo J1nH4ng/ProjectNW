@@ -7,7 +7,7 @@ import {
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 import { transformerTwoslash } from "fumadocs-twoslash";
-import { rehypeCodeDefaultOptions } from "fumadocs-core/mdx-plugins";
+import { rehypeCodeDefaultOptions, remarkAdmonition } from "fumadocs-core/mdx-plugins";
 import { createFileSystemTypesCache } from "fumadocs-twoslash/cache-fs";
 
 // You can customise Zod schemas for frontmatter and `meta.json` here
@@ -25,7 +25,7 @@ export default defineConfig({
   lastModifiedTime:  'git',
   mdxOptions: {
     // MDX options
-    remarkPlugins: [remarkMath],
+    remarkPlugins: [remarkMath, remarkAdmonition],
     rehypePlugins: (v) => [rehypeKatex, ...v],
     rehypeCodeOptions: {
       themes: {
