@@ -10,6 +10,7 @@
     "move",
     "upgrade",
     "cve",
-    "chklist"
+    "chklist",
+    "rust"
   ]
 }
