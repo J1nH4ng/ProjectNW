@@ -4,7 +4,6 @@
   "icon": "ShieldCheck",
   "root": true,
   "pages": [
-    "---高危漏洞部分---",
-    "90514742"
+    "(0day)"
   ]
 }

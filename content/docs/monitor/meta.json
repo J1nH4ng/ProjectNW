@@ -4,6 +4,7 @@
     "icon": "Activity",
     "root": true,
     "pages": [
-        "---Zabbix 部分---"
+        "(zabbix)",
+        "(prometheus)"
     ]
 }
