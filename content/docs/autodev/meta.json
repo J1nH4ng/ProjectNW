@@ -4,6 +4,6 @@
     "icon": "Workflow",
     "root": true,
     "pages": [
-        "---Ansible 部分---"
+        "(ansible)"
     ]
 }
